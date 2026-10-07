@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tuma | Text it. It is on your website.</title>
+  <meta name="description" content="Tuma turns WhatsApp messages from a shop owner into live updates on their website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Tuma home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        Tuma
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="#why">Why Tuma</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#send">What you can send</a></li>
+          <li><a class="nav__cta" href="#join">Join the waitlist</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Text it. It is on your website.</h1>
+        <p class="hero__sub">Tuma turns a WhatsApp message from a shop owner into a live update on their website. No dashboard, no login, no developer to call.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#join">Join the waitlist</a>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+
+      <!-- Looping demo, pure CSS: a message is sent, Tuma replies, a new product appears on the site. -->
+      <div class="demo" aria-hidden="true">
+        <div class="phone">
+          <div class="phone__bar">
+            <span class="phone__avatar"></span>
+            Tuma
+          </div>
+          <div class="chat">
+            <p class="bubble bubble--out">Kikoy set, KSh 1,800, 3 left</p>
+            <div class="reply-slot">
+              <p class="typing"><span></span><span></span><span></span></p>
+              <p class="bubble bubble--in">Added to your shop page.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="browser">
+          <div class="browser__bar">
+            <span></span><span></span><span></span>
+            <em>yourshop.co.ke</em>
+          </div>
+          <div class="shop">
+            <div class="item">
+              <div class="item__img item__img--basket"></div>
+              <p class="item__name">Sisal basket</p>
+              <p class="item__price">KSh 1,200</p>
+            </div>
+            <div class="item">
+              <div class="item__img item__img--beads"></div>
+              <p class="item__name">Beaded sandals</p>
+              <p class="item__price">KSh 2,400</p>
+            </div>
+            <div class="item item--new">
+              <div class="item__img item__img--kikoy"></div>
+              <p class="item__name">Kikoy set</p>
+              <p class="item__price">KSh 1,800</p>
+              <p class="item__stock">3 left</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="why">
+      <div class="wrap wrap--split">
+        <div>
+          <h2>Websites go stale. WhatsApp never does.</h2>
+        </div>
+        <div class="facts">
+          <p><strong>Owners already live in WhatsApp.</strong> Orders, photos, and prices are sent there every day, long before anyone opens a website editor.</p>
+          <p><strong>Updating a site feels like extra work.</strong> So prices go out of date and sold out items stay listed, and customers stop trusting the page.</p>
+          <p><strong>A developer is too slow and too costly.</strong> Waiting days to change one price is not an option for a small shop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="how">
+      <div class="wrap">
+        <h2>Three steps, and one of them is yours.</h2>
+        <ol class="steps">
+          <li>
+            <h3>Send a message</h3>
+            <p>Write to your Tuma number the way you would write to a customer. Add a photo if you have one.</p>
+          </li>
+          <li>
+            <h3>Tuma reads it</h3>
+            <p>It picks out the item, the price, and the stock, then replies to confirm what it understood.</p>
+          </li>
+          <li>
+            <h3>Your site updates</h3>
+            <p>The change goes live on your website. Nothing to log in to, nothing to publish.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--light" id="send">
+      <div class="wrap">
+        <h2>Write it the way you talk.</h2>
+        <div class="rules">
+          <div class="rule">
+            <p class="bubble bubble--out">Kikoy set, KSh 1,800, 3 left</p>
+            <p class="rule__result">Adds a new product with its price and stock.</p>
+          </div>
+          <div class="rule">
+            <p class="bubble bubble--out">Sold out: sisal basket</p>
+            <p class="rule__result">Marks the item as sold out on the site.</p>
+          </div>
+          <div class="rule">
+            <p class="bubble bubble--out">Beaded sandals now KSh 2,000</p>
+            <p class="rule__result">Changes the price everywhere it appears.</p>
+          </div>
+          <div class="rule">
+            <p class="bubble bubble--out">Closed Monday, open Tuesday 8am</p>
+            <p class="rule__result">Updates your opening hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="join">
+      <div class="wrap cta__inner">
+        <h2>Be first to try Tuma.</h2>
+        <p>Tell us what you sell and we will save you a place. We are starting with small shops in Nairobi.</p>
+        <a class="btn btn--primary" href="mailto:hello@tuma.example">Join the waitlist</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__brand">Tuma</p>
+      <ul class="footer__links">
+        <li><a href="mailto:hello@tuma.example">hello@tuma.example</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X</a></li>
+      </ul>
+      <p class="footer__note">Nairobi, Kenya</p>
+    </div>
+  </footer>
+
+</body>
+</html>
